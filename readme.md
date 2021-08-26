@@ -106,3 +106,5 @@
 105. clear code in index.html
 106. git add .
 107. git commit -m 'finish css layout'
+108. gti push -u origin css-layout
+109. create pull in github

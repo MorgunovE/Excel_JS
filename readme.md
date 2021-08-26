@@ -69,3 +69,9 @@
 68. delete module.js
 69. clear index.scss
 70. git commit -m "finish project config"
+71. git pull
+72. git --version
+73. git init and add repository
+74. gti checkout -b 'webpack'
+75. add webpack.config.js
+76. git pull

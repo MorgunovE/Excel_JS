@@ -75,3 +75,36 @@
 74. gti checkout -b 'webpack'
 75. add webpack.config.js
 76. git pull
+77. add new branch css-layout
+78. git checkout -b css-layout
+79. npm install normalize.css
+80. import and add font in index.scss
+81. add _variables.scss, _mixins.scss, header.scss, toolbar.scss, formula.scss, table.scss
+82. import in  all scss
+83. import in index.scss and code
+84. add code in index.html
+85. add style in all scss
+86. material icons https://google.github.io/material-design-icons/
+87. add icons in index.html
+88. add code in index.html
+89. npm run start
+90. add style in header.scss
+91. add code in _variables.scss
+92. add code in _mixin.scss
+93. add code in toolbar.scss
+94. add code in index.html
+95. add code in index.html
+96. add code in formula.scss
+97. add code in index.html
+98. add code in table.scss
+99. add assets and excel.html and move code from index.html
+100. add dashboard.scss and code
+101. add dashboard in index.scss
+102. change code in index.html
+103. add mixin in _mixin.scss
+104. add dashboard.html and move code from index.html
+105. clear code in index.html
+106. git add .
+107. git commit -m 'finish css layout'
+108. gti push -u origin css-layout
+109. create pull in github

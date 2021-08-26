@@ -1,6 +1,6 @@
 // 11
-import './module'
+// import './module'
 // 34
 import './scss/index.scss'
 
-console.log("Index.js working")
+console.log('Index.js working')

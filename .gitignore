@@ -1,5 +1,8 @@
 .node_modules
 .cache
+node_modeles
+**/node_modules
+node_modules/**
 # IntelliJ project files
 .idea
 *.iml

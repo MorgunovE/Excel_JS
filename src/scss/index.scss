@@ -3,3 +3,33 @@
 //body {
 //  background: $red;
 //}
+//80
+@import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+//83
+@import "header";
+@import "toolbar";
+@import "formula";
+@import "table";
+//101
+@import "dashboard";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+//83
+.excel {
+  position: relative;
+  color: #000;
+  height: 100%;
+  max-width: 100%;
+  font-size: .8rem;
+}

@@ -168,3 +168,32 @@
 167. open pull request
 168. merge
 169. checkout and pull
+170. add code in Table.js
+171. add code in table.template.js
+172. add code in table.scss
+173. add code data in table.template.js
+174. add code in Table.js
+175. add code data in table.template.js
+176. add data-type="resizable" in Table.js
+177. add code in dom.js
+178. add code in Table.js
+179. add code data in table.template.js
+180. add code in dom.js
+181. add code in Table.js
+182. add code in dom.js
+183. add code in Table.js
+184. add code data in table.template.js
+185. add code in Table.js
+186. add code in dom.js
+187. add code in Table.js
+188. change code in Table.js
+189. add table.resize.js and code
+190. move code from Table.js to table.resize.js
+191. add table.functions.js and code
+192. move code from Table.js to table.functions.js
+193. git add .
+194. git commit -m "Finish table resize"
+195. add pull request
+196. merge
+197. git checkout 
+198. git pull

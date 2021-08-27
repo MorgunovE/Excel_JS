@@ -108,3 +108,63 @@
 107. git commit -m 'finish css layout'
 108. gti push -u origin css-layout
 109. create pull in github
+110. merge in github
+111. git checkout master 
+112. git pull
+113. git checkout -b "framework-start"
+114. npm run start
+115. add core and DomListener.js and code
+116. add ExcelComponent.js in core and code
+117. add components and excel and Excel.js and code
+118. add code in index.js
+119. code in Excel.js
+120. add header in components and Header.js and code
+121. add table in components and Table.js and code
+122. add formula in components and Formula.js and code
+123. add toolbar in components and Toolbar.js and code
+124. add components in index.js
+125. add code in Excel.js
+126. add code in Formula.js
+127. add code in Header.js
+128. add code in Table.js
+129. add code in Toolbar.js
+130. if code error in browser -  npm i -D @babel/plugin-proposal-class-properties and add in webpack.config.js
+131. npm start
+132. add code in DomListener.js
+133. add code in Excel.js
+134. copy code from excel.html to Header.js
+135. copy code from excel.html to Toolbar.js
+136. copy code from excel.html to Formula.js
+137. copy code from excel.html to Table.js
+138. add dom.js in core and code
+139. import function $ in Excel.js
+140. add code in dom.js
+141. add code in Excel.js
+142. if you have error with eslint and rules just recompile project - npm start
+143. add code in dom.js
+144. add code in Excel.js
+145. add code in DomListener.js
+146. add code in Formula.js
+147. add code in ExcelComponent.js
+148. add code in DomListener.js
+149. add code in ExcelComponent.js
+150. change code map in Excel.js
+151. add code in DomListener.js
+152. add utils.js in core and code
+153. add code in Formula.js
+154. add code in ExcelComponent.js
+155. add code in Formula.js
+156. add code in dom.js
+157. add code in DomListener.js
+158. add code in ExcelComponent.js
+159. add code in Excel.js
+160. add code in DomListener.js
+161. add event in Toolbar.js
+162. add table.template.js in table and code
+163. add createTable in Table.js
+164. git add .
+165. git commit -m 'Finish base framework functional'
+166. fit push -u origin framework-start
+167. open pull request
+168. merge
+169. checkout and pull

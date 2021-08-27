@@ -15,13 +15,14 @@ const isDev = !isProd
 // console.log('Is Dev: ', isDev)
 // 50
 const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`
-// 62
+// 62 and 130
 const jsLoaders = () => {
   const loaders = [
     {
       loader: 'babel-loader',
       options: {
         presets: ['@babel/preset-env'],
+        plugins: ['@babel/plugin-proposal-class-properties']
       },
     },
   ]

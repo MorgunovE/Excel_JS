@@ -4,22 +4,35 @@ const CODES = {
   Z: 90
 }
 
-function toCell() {
+function toCell(_, col) { // 179-2
+  // console.log(col)
+  // 179-3
   return `
-    <div class="cell" contenteditable></div>
+    <div class="cell" contenteditable data-col="${col}"></div>
   `
 }
 
-function toColumn(col) {
+function toColumn(col, index) { // 179
+  // console.log(index)
+  // 171 and 173-1 and 175 and 179-1
   return `
-    <div class="column">${col}</div>
+    <div class="column" data-type="resizable" data-col="${index}">
+      ${col}
+      <div class="col-resize" data-resize="col"></div>
+    </div>
   `
 }
 
 function createRow(index, content) {
+  // 171-1 and 171-2
+  const resize = index ? '<div class="row-resize" data-resize="row"></div>' : '' // 173
+  // 184
   return `
-    <div class="row">
-      <div class="row-info">${index ? index : ''}</div>
+    <div class="row" data-type="resizable">
+      <div class="row-info">
+        ${index ? index : ''}
+        ${resize}
+      </div>
       <div class="row-data">${content}</div>
     </div>
   `

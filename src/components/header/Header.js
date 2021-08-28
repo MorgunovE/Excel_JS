@@ -4,6 +4,14 @@ import {ExcelComponent} from '@core/ExcelComponent' // auto import
 export class Header extends ExcelComponent {
 // 127
   static className = 'excel__header'
+  // 229
+  constructor($root, options) {
+    super($root, {
+      name: 'Header',
+      ...options
+    })
+  }
+  
   toHTML() {
     // 134
     return `

@@ -1,11 +1,14 @@
 // 117
-import {$} from '@core/dom'; // auto import
+import {$} from '@core/dom';
+import {Emitter} from '@core/Emitter'; // auto import
 
 export class Excel {
 // 119
   constructor(selector, options) {
     this.$el = $(selector) // 144
     this.components = options.components || []
+    // 227
+    this.emitter = new Emitter()
   }
   
   // 125
@@ -18,12 +21,17 @@ export class Excel {
     // $root.textContent = 'test'
     // $root.style.fontSize = '5rem'
     // console.log(this.components)
+    // 232-1
+    const componentOptions = {
+      emitter: this.emitter
+    }
+    
     this.components = this.components.map(Component => { // 150
       // 133-1
       // const $el = document.createElement('div')
       // $el.classList.add(Component.className)
       const $el = $.create('div', Component.className)
-      const component = new Component($el)
+      const component = new Component($el, componentOptions) // 232
       // 159 DEBUG
       // if (component.name) {
       //   window['c' + component.name] = component
@@ -51,5 +59,9 @@ export class Excel {
     // 150-1
     // console.log(this.components)
     this.components.forEach(component => component.init())
+  }
+  // 241
+  destroy() {
+    this.components.forEach(component => component.destroy())
   }
 }

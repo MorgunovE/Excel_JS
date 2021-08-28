@@ -3,13 +3,28 @@ const CODES = {
   A: 65,
   Z: 90
 }
-
-function toCell(_, col) { // 179-2
-  // console.log(col)
-  // 179-3
-  return `
-    <div class="cell" contenteditable data-col="${col}"></div>
-  `
+// 204-2
+// function toCell(row, col) { // 179-2 and 204-1
+//   // console.log(col)
+//   // 179-3
+//   return `
+//     <div class="cell" contenteditable data-col="${col}" data-row="${row}"></div>
+//   `
+// }
+// 204-3
+function toCell(row) {
+  return function(_, col) {
+    // 211
+    return `
+      <div
+        class="cell"
+        contenteditable
+        data-col="${col}"
+        data-type="cell"
+        data-id="${row}:${col}"
+        ></div>
+    `
+  }
 }
 
 function toColumn(col, index) { // 179
@@ -51,14 +66,24 @@ export function createTable(rowCount = 15) {
       .map(toColumn)
       .join('')
   // console.log(cols)
+ 
   rows.push(createRow(null, cols))
-  for (let i = 0; i < rowCount; i++) {
+  // 204
+  // for (let i = 0; i < rowCount; i++) {
+  //   const cells = new Array(colsCount)
+  //       .fill('')
+  //       .map(toCell)
+  //       .join('')
+  // rows.push(createRow(i + 1, cells))
+  // 204-1
+  for (let row = 0; row < rowCount; row++) {
     const cells = new Array(colsCount)
         .fill('')
-        .map(toCell)
+        // .map((_, col)=>toCell(row))
+        .map(toCell(row))
         .join('')
     
-    rows.push(createRow(i + 1, cells))
+    rows.push(createRow(row + 1, cells))
   }
   return rows.join('')
 }

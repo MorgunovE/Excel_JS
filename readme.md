@@ -197,3 +197,62 @@
 196. merge
 197. git checkout 
 198. git pull
+199. git branch -b table-logic
+200. add code in Table.js
+201. add TableSelection.js and code
+202. add code in Table.js
+203. add code in TableSelection.js
+204. change code in table.template.js
+205. add code in dom.js
+206. add code in Table.js
+207. add code in dom.js
+208. add code in TableSelection.js
+209. add code in ExcelComponent.js
+210. add prepare in Table.js
+211. add code in table.template.js
+212. add code in table.functions.js
+213. add code in TableSelection.js
+214. add code in Table.js
+215. add code in TableSelection.js
+216. add code in dom.js
+217. add code in Table.js
+218. add code in TableSelection.js
+219. move code from Table.js to utils
+220. add and move code from Table.js in table.functions.js
+221. add code in Table.js
+222. add code in dom.js
+223. add code in TableSelection.js
+224. move code from Table.js to table.function.js
+225. observer pattern
+226. add Emitter.js in core and code
+227. add code in Excel.js
+228. add options in Formula.js
+229. add code in Header.js
+230. add code in Table.js
+231. add code in Toolbar.js
+232. add code in Excel.js
+233. add code in ExcelComponent.js
+234. add code in Formula.js
+235. add code in Table.js
+236. add code in dom.js
+237. add code in Table.js
+238. add code in ExcelComponent.js
+239. change code in Formula.js
+240. change code in Table.js
+241. add code in Excel.js
+242. add code in Formula.js
+243. add code in Table.js
+244. add code in dom.js
+245. add code in Formula.js
+246. add code in Table.js
+247. add code in Formula.js
+248. add code in Table.js
+249. add code in Formula.js
+250. add code in Table.js
+251. add code in Table.js
+252. git add .
+253. git commit -m "Finish base table logic"
+254. git push
+255. pull request
+256. merge
+257. checkout and pull
